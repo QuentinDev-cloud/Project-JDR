@@ -1,0 +1,14 @@
+﻿<Window x:Class="JDR.AddItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JDR"
+        mc:Ignorable="d"
+        Title="ADDITEM" Height="200" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Name="bntAddItem" Content="ADD" Margin="100,110,0,0" Width="200" Height="46" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntAddItem_Click"/>
+        <TextBox Name="txtAddItem" Text="" Width="250" Height="40" Margin="75,30,0,0" TextWrapping="Wrap" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

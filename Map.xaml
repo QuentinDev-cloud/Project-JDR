@@ -1,0 +1,23 @@
+﻿<Window x:Class="JDR.Map"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JDR"
+        mc:Ignorable="d"
+        Title="Lisa" Height="750" Width="1400" WindowStartupLocation="CenterScreen">
+    <Grid Background="White">
+        <Rectangle HorizontalAlignment="Left" Height="730" Margin="210,0,0,-7.2" Stroke="Black" VerticalAlignment="Top" Width="1250">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/Invia Mar18 15-55.jpeg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="730" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="300" Fill="Black"/>
+        <Label Name="lblPlayerList" Content="Player :" Height="50"  Width="100" Margin="100,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" FontFamily="Tempus Sans ITC" Foreground="White"/>
+        <ListBox Name="lboxPlayerList" Width="280" Height="200" Margin="10,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <Button Name="btnReturn"  Content="BACK" HorizontalAlignment="Left" Height="50" Margin="25,650,0,0" VerticalAlignment="Top" Width="250" Click="btnBack_Click"/>
+        <Button Name="btnSelect"  Content="SELECT" HorizontalAlignment="Left" Height="50" Margin="25,300,0,0" VerticalAlignment="Top" Width="250" Click="btnSelect_Click"/>
+        <Button Name="btnEnemy"  Content="ENNEMY" HorizontalAlignment="Left" Height="50" Margin="25,375,0,0" VerticalAlignment="Top" Width="250" Click="btnEnnemy_Click"/>
+
+    </Grid>
+</Window>

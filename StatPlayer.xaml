@@ -1,0 +1,27 @@
+﻿<Window x:Class="JDR.StatPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JDR"
+        mc:Ignorable="d"
+        Title="StatPlayer" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lblPlayerName" Content="Player :" Height="50"  Width="100" Margin="10,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" FontFamily="Tempus Sans ITC"/>
+        <Label x:Name="lblPlayerHp" Content="HP :" Height="50"  Width="100" Margin="10,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" FontFamily="Tempus Sans ITC"/>
+        <TextBox Name="txtPlayerName" Text="" Width="500" Height="50" Margin="120,20,0,0" TextWrapping="Wrap" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+        <TextBox Name="txtPlayerHp" Text="" Width="540" Height="50" Margin="80,120,0,0" TextWrapping="Wrap" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+        <Button Name="btnReturn"  Content="Return" HorizontalAlignment="Left" Height="50" Margin="250,337,0,0" VerticalAlignment="Top" Width="250" Click="btnAddPlayer_Click"/>
+        <Button x:Name="bntPlayerInventory" Content="" Margin="80,225,0,0" Width="86" Height="90" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntPlayerInventory_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Chest-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bntPlayerCapacity" Content="" Margin="250,225,0,0" Width="123" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntPlayerCapacity_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Spell-Book-icon.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

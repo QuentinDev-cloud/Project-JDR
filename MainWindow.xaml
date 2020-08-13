@@ -1,0 +1,16 @@
+﻿<Window x:Class="JDR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JDR"
+        mc:Ignorable="d"
+        Title="Lisa" Height="750" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Name="btnStart"  Content="START" HorizontalAlignment="Left" Height="50" Margin="125,625,0,0" VerticalAlignment="Top" Width="250" Click="btnStart_Click"/>
+        <Label Name="lblPlayerList" Content="Player :" Height="50"  Width="100" Margin="200,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" FontFamily="Tempus Sans ITC"/>
+        <ListBox Name="lboxPlayerList" Width="350" Height="350" Margin="75,100,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <Button Name="btnAddPlayer"  Content="ADD" HorizontalAlignment="Left" Height="50" Margin="125,475,0,0" VerticalAlignment="Top" Width="250" Click="btnAddPlayer_Click"/>
+        <Button x:Name="btnClearPlayer"  Content="CLEAR" HorizontalAlignment="Left" Height="50" Margin="125,550,0,0" VerticalAlignment="Top" Width="250" Click="btnClearPlayer_Click"/>
+    </Grid>
+</Window>

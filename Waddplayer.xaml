@@ -1,0 +1,34 @@
+﻿<Window x:Class="JDR.WAddPlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JDR"
+        mc:Ignorable="d"
+        Title="ADDPLAYER" Height="750" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\BGadd.jpg"/>
+        </Grid.Background>
+        <Button Name="bntReturnPlayer" Content="BACK" Margin="50,650,0,0" Width="200" Height="46" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntReturnPlayer_Click"/>
+        <Button Name="bntAddPlayer" Content="ADD" Margin="750,650,0,0" Width="200" Height="46" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntAddPlayer_Click"/>
+        <Label Name="lblPlayerName" Content="Name :" Height="50"  Width="100" Margin="460,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" FontFamily="Tempus Sans ITC" Background="#00000000" Foreground="White" RenderTransformOrigin="-1.192,0.568"/>
+        <TextBox Name="txtPlayerName" Text="" Width="250" Height="40" Margin="374,75,0,0" TextWrapping="Wrap" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+        <Button Name="bntPlayerInventory" Content="" Margin="50,304,0,0" Width="196" Height="174" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntPlayerInventory_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Chest-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="bntPlayerCapacity" Content="" Margin="750,304,0,0" Width="243" Height="224" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntPlayerCapacity_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/Spell-Book-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="bntPlayerLife" Content="" Margin="424,304,0,0" Width="200" Height="174" HorizontalAlignment="Left" VerticalAlignment="Top" Click="bntPlayerLife_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/health-potion_shop_thumb.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
